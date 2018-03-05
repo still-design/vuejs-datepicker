@@ -22,7 +22,7 @@ To view demo examples locally clone the repo and run `npm install && npm run dev
 ## Install
 
 ``` bash
-$ npm install vuejs-datepicker --save
+$ npm install stilldesign-vuejs-datepicker --save
 ```
 ``` javascript
 import Datepicker from 'vuejs-datepicker';
