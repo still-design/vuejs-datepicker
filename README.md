@@ -96,6 +96,7 @@ Inline always open version
 | open-date                     | Date\|String    |             | If set, open on that date                |
 | minimum-view                  | String          | 'day'       | If set, lower-level views won't show     |
 | maximum-view                  | String          | 'year'      | If set, higher-level views won't show    |
+| disabledDateHighlight         | Boolean         | false       | If true, disabled dates could highlighted|
 
 
 ## Events
@@ -205,7 +206,9 @@ var state = {
         dates: [ // Highlight an array of dates
             new Date(2016, 9, 16),
             new Date(2016, 9, 17),
-            new Date(2016, 9, 18)
+            new Date(2016, 9, 18),
+            {date: new Date(2016, 9, 18)},
+            {date: new Date(2016, 9, 18), className: 'customClassName'},
         ],
         // a custom function that returns true of the date is highlighted
         // this can be used for wiring you own logic to highlight a date if none
